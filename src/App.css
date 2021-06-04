@@ -38,13 +38,13 @@
 }
 
 #arid{
-  background-color: rgb(228, 217, 203);
+  border-bottom: 3px solid rgb(199, 171, 134);
   width: fit-content;
   padding: 0 1%;
 }
 
 #temperate{ 
-  background-color: rgb(216, 247, 216);
+  border-bottom: 3px solid rgb(102, 129, 102);
   width: fit-content;
   padding: 0 1%;
 
@@ -52,7 +52,24 @@
 }
 
 #murky{ 
-  background-color: rgb(219, 219, 219);
+  border-bottom: 3px solid rgb(144, 144, 144);
+  width: fit-content;
+    padding: 0 1%;
+
+
+}
+
+#tropical{ 
+  border-bottom: 3px solid rgb(22, 168, 22);
+  width: fit-content;
+  padding: 0 1%;
+
+
+}
+
+
+#frozen{ 
+  border-bottom: 3px solid rgb(43, 67, 110);
   width: fit-content;
     padding: 0 1%;
 
@@ -76,6 +93,7 @@
   justify-content: space-between;
   flex-wrap: wrap;
   margin: 3%;
+
  
 }
 
@@ -84,6 +102,12 @@
   overflow-x: hidden;
 }
 
-html{
-  overflow-x: hidden;
+td{
+  border-right: 2px solid black;
+  padding: 1%;
+}
+
+table{
+  width: 100%; 
+  text-align: center; 
 }

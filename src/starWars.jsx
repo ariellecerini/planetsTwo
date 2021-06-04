@@ -1,7 +1,17 @@
 import React from 'react';
 import "./App.css";
 
+function parseIT(data){
 
+  var dataOut = data.split(', '); 
+
+  if (!dataOut[1]){
+    return dataOut[0];
+  } else {
+    return dataOut[1]
+  }
+
+}
 class PlanetName extends React.Component {
   
   constructor(props){
@@ -37,7 +47,7 @@ render() {
               {
                   planet.map(planet => (
                       <div key={planet.id} className="card"  align="start">
-                              <h2 key={planet.id} id={planet.climate}>{planet.name}</h2>
+                              <h2 key={planet.id} id={parseIT(planet.climate)}>{planet.name}</h2>
                               <table>
                                 <tr >
                                   <td> 
